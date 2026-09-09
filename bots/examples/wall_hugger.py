@@ -1,10 +1,9 @@
 """Example 2: prefer open moves that run beside a wall or trail."""
 
-from arena import Direction, State
+from bot_api import DIRECTIONS, Direction, State
 
 NAME = "Wall Hugger"
 
-DIRECTIONS: dict[Direction, tuple[int, int]] = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 OPPOSITE: dict[Direction, Direction] = {"up": "down", "down": "up", "left": "right", "right": "left"}
 
 

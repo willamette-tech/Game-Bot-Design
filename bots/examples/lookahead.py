@@ -1,10 +1,8 @@
 """Example 3: count free cells reachable within two steps of each move."""
 
-from arena import Direction, State
+from bot_api import DIRECTIONS, Direction, State
 
 NAME = "Two-Step Lookahead"
-
-DIRECTIONS: dict[Direction, tuple[int, int]] = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
 
 def move(state: State) -> Direction:

@@ -1,15 +1,10 @@
 """Example 1: keep going until the cell ahead is blocked."""
 
-from arena import Direction, State
+from bot_api import DIRECTIONS, Direction, State
 
 NAME = "Straight Shooter"
 
-DIRECTIONS: dict[Direction, tuple[int, int]] = {
-    "up": (0, -1),
-    "right": (1, 0),
-    "down": (0, 1),
-    "left": (-1, 0),
-}
+# DIRECTIONS maps each direction to the (dx, dy) it moves you; see bot_api.py.
 ORDER: list[Direction] = ["up", "right", "down", "left"]
 
 

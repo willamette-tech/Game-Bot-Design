@@ -2,11 +2,9 @@
 
 from collections import deque
 
-from arena import Direction, State
+from bot_api import DIRECTIONS, Direction, State
 
 NAME = "Flood Fill"
-
-DIRECTIONS: dict[Direction, tuple[int, int]] = {"up": (0, -1), "right": (1, 0), "down": (0, 1), "left": (-1, 0)}
 
 
 def region_size(state: State, start: tuple[int, int]) -> int:
