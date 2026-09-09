@@ -49,7 +49,9 @@ def move(state: State) -> Direction:
 ```
 
 Your light cycle moves one grid cell every tick and leaves a permanent trail. Every tick, the arena calls your `move()` function, which in turn must return one of `"up"`, `"down"`, `"left"`, or `"right"`. You crash if you leave the board, hit any trail *(including yours)*, or choose the same new cell as another bot on the same tick. Everyone moves simultaneously and the last bot alive wins; tied crashes share a place.
+
 <br>
+
 The `State` object also contains other useful fields such as `opponents: list[Opponent]`, allowing you to factor opponent positions into your logic as well. **I highly encourage you to read the file `bot_api.py` in order to see all of the data available to your bot.**
 
 ## Testing your Bot
