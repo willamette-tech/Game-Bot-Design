@@ -4,7 +4,7 @@ In today's club meeting we will be having an algorithm-writing tournament. Each 
 ## The Game
 This game is based off of the **Tron Light-Cycle** early arcade game. In this game, a number of players move their cycle around the arena, leaving a trail behind them. Any other player who runs into this trail will be killed and eliminated. 
 <br>
-![Game Overview](https://github.com/willamette-tech/Game-Bot-Design/blob/main/images/overview.png?raw=true)
+![Game Overview](https://github.com/willamette-tech/Game-Bot-Design/blob/main/media/game.gif?raw=true)
 <br>
 The only difference in this case is that instead of manually controlling your cycle, **you will be writing an algorithm that controls it.**
 While you can test your algorithm against a set of example ones, at the end of the meeting, we will have a competition between everyone's self-written algorithms.
@@ -30,7 +30,7 @@ to open the game-runner application.
 <br>
 
 You should see a menu that looks like this:
-![Menu Screen](https://github.com/willamette-tech/Game-Bot-Design/blob/main/images/menu.png?raw=true)
+![Menu Screen](https://github.com/willamette-tech/Game-Bot-Design/blob/main/media/menu.png?raw=true)
 Take a moment to run a couple of the example bots against each other. 
 
 ## Writing your own Bot
