@@ -28,10 +28,9 @@ python viewer.py
 ```
 to open the game-runner application.
 <br>
-You should see a meny that looks like this:
-![Menu Screen](https://github.com/willamette-tech/Game-Bot-Design/blob/main/images/menu.png?raw=true)
 
-<br>
+You should see a menu that looks like this:
+![Menu Screen](https://github.com/willamette-tech/Game-Bot-Design/blob/main/images/menu.png?raw=true)
 Take a moment to run a couple of the example bots against each other. 
 
 ## Writing your own Bot
@@ -51,7 +50,7 @@ def move(state: State) -> Direction:
 
 Your light cycle moves one grid cell every tick and leaves a permanent trail. Every tick, the arena calls your `move()` function, which in turn must return one of `"up"`, `"down"`, `"left"`, or `"right"`. You crash if you leave the board, hit any trail *(including yours)*, or choose the same new cell as another bot on the same tick. Everyone moves simultaneously and the last bot alive wins; tied crashes share a place.
 <br>
-The `State` object also contains other useful 
+The `State` object also contains other useful fields such as `opponents: list[Opponent]`, allowing you to factor opponent positions into your logic as well. **I highly encourage you to read the file `bot_api.py` in order to see all of the data available to your bot.**
 
 ## Testing your Bot
 Once again, run
