@@ -53,11 +53,11 @@ class SafeFont:
 
     def __init__(self, pygame, size: int) -> None:
         self.face = pygame.font.Font(None, size)
-        undefined = pygame.image.tostring(self.face.render("\uffff", True, TEXT), "RGBA")
+        undefined = pygame.image.tobytes(self.face.render("\uffff", True, TEXT), "RGBA")
         self.substitutes = {
             character: replacement
             for character, replacement in GLYPH_SUBSTITUTES.items()
-            if pygame.image.tostring(self.face.render(character, True, TEXT), "RGBA") == undefined
+            if pygame.image.tobytes(self.face.render(character, True, TEXT), "RGBA") == undefined
         }
 
     def render(self, text: str, antialias: bool, color: tuple[int, int, int]):

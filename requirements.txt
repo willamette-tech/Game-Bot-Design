@@ -1,1 +1,3 @@
-pygame>=2.5,<3
+# pygame-ce is the maintained fork of pygame; it ships wheels for new Python
+# releases, which upstream pygame (stuck at 2.6.1) does not. Same `import pygame`.
+pygame-ce>=2.5.5,<3

@@ -21,7 +21,6 @@ Next, open a terminal in this folder and initialize the Python project
 ```sh
 python -m pip install -r requirements.txt
 ```
-
 Finally, run
 ```sh
 python viewer.py
